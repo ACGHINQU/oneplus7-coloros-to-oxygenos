@@ -1,0 +1,16 @@
+{
+  "Size": 2579323479,
+  "MD5": "F557A41C802B09636740303A4618F869",
+  "SHA256": "E15EE75F64CF6E19AE7696A0C933C5AA3B811850A0BC67407CB2D669DC74C19E",
+  "PreDevice": "OnePlus7",
+  "Downgrade": true,
+  "Wipe": true,
+  "SignedLength": 2579321946,
+  "SignerThumbprint": "B79145D79F8F14C26C68ECBB278D56AE4365B161",
+  "DigestAlgorithm": "1.3.14.3.2.26",
+  "SignedAttributeCount": 0,
+  "SignatureStart": 1513,
+  "CommentSize": 1531,
+  "FullOtaSignatureVerified": true,
+  "SignerMatchesDeviceTrustedKey": true
+}

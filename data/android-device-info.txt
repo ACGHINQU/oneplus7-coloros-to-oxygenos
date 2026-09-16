@@ -1,0 +1,13 @@
+ro.product.model=GM1900
+ro.product.device=OnePlus7
+ro.build.display.id=GM1900_11_H.40
+ro.build.version.release=12
+ro.build.version.incremental=P.202303230244
+ro.build.version.oplusrom=V12.1
+ro.build.version.opporom=
+ro.rom.version=
+ro.build.fingerprint=OnePlus/OnePlus7_CH/OnePlus7:12/SKQ1.211113.001/P.202303230244:user/release-keys
+ro.boot.flash.locked=1
+ro.boot.verifiedbootstate=green
+ro.boot.project_name=
+ro.boot.prjname=18857

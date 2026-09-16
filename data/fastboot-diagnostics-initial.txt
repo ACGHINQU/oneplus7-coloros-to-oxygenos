@@ -1,0 +1,53 @@
+> fastboot -s <DEVICE_SERIAL> getvar product
+
+product: msmnile
+Finished. Total time: 0.004s
+
+ExitCode=0
+> fastboot -s <DEVICE_SERIAL> getvar is-userspace
+
+getvar:is-userspace                                FAILED (remote: 'GetVar Variable Not found')
+Finished. Total time: 0.004s
+
+ExitCode=0
+> fastboot -s <DEVICE_SERIAL> getvar unlocked
+
+unlocked: no
+Finished. Total time: 0.003s
+
+ExitCode=0
+> fastboot -s <DEVICE_SERIAL> oem device-info
+
+(bootloader) Verity mode: true
+(bootloader) Device unlocked: false
+(bootloader) Device critical unlocked: false
+(bootloader) Charger screen enabled: true
+OKAY [  0.007s]
+Finished. Total time: 0.007s
+
+ExitCode=0
+> fastboot -s <DEVICE_SERIAL> flashing get_unlock_ability
+
+(bootloader) get_unlock_ability: 1
+OKAY [  0.004s]
+Finished. Total time: 0.004s
+
+ExitCode=0
+> fastboot -s <DEVICE_SERIAL> getvar current-slot
+
+current-slot: b
+Finished. Total time: 0.004s
+
+ExitCode=0
+> fastboot -s <DEVICE_SERIAL> getvar version-bootloader
+
+version-bootloader: 
+Finished. Total time: 0.004s
+
+ExitCode=0
+> fastboot -s <DEVICE_SERIAL> getvar battery-soc
+
+getvar:battery-soc                                 FAILED (remote: 'GetVar Variable Not found')
+Finished. Total time: 0.004s
+
+ExitCode=0

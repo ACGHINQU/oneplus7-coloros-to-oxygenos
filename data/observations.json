@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "case_date": "2026-09-16",
+  "provenance": "Retrospective transcription of tool outputs and owner messages; this file is not a raw UI dump and contains no reconstructed timestamps.",
+  "events": [
+    {
+      "order": 1,
+      "source": "saved fastboot output",
+      "observation": "Device unlocked: false; get_unlock_ability: 1",
+      "evidence": "fastboot-diagnostics-initial.txt"
+    },
+    {
+      "order": 2,
+      "source": "saved fastboot output",
+      "observation": "Both oem unlock and flashing unlock failed: Device cannot be unlocked for technical reason.",
+      "evidence": ["fastboot-unlock-attempt.txt", "fastboot-flashing-unlock-attempt.txt"]
+    },
+    {
+      "order": 3,
+      "source": "saved ADB properties",
+      "observation": "GM1900, OnePlus7, Android 12, ColorOS 12.1, GM1900_11_H.40",
+      "evidence": "android-device-info.txt"
+    },
+    {
+      "order": 4,
+      "source": "transcribed UI tool output",
+      "observation": "Stock ColorOS local install displayed 验证失败; installation did not start."
+    },
+    {
+      "order": 5,
+      "source": "saved validation results and transcribed ADB output",
+      "observation": "Standalone OnePlus updater signature matched the current official updater; installation of the APK succeeded.",
+      "evidence": "updater-apk-verification.json"
+    },
+    {
+      "order": 6,
+      "source": "transcribed UI tool output and owner confirmation",
+      "observation": "Rollback package accepted, data-wipe prompt confirmed under prior owner authorization, owner entered lock-screen credential on the phone."
+    },
+    {
+      "order": 7,
+      "source": "transcribed UI tool outputs",
+      "observation": "正在安装系统更新",
+      "observed_progress_percent": [9, 48, 71, 84]
+    },
+    {
+      "order": 8,
+      "source": "transcribed UI tool output",
+      "observation": "安装完成，重启手机开始体验吧！",
+      "observed_progress_percent": 100,
+      "next_action": "Used the updater's 重启手机 button."
+    },
+    {
+      "order": 9,
+      "source": "owner report",
+      "observation": "Owner confirmed that switching to the international system was complete and was the actual objective; phone disconnected."
+    }
+  ],
+  "not_verified_after_reboot": ["exact running build", "bootloader lock state", "all device and network functions"],
+  "no_further_unlock_attempt_after_rollback": true
+}

@@ -1,0 +1,20 @@
+# Publish only this explicit set of folders and files. Local phone logs and
+# downloaded firmware/tools remain outside the public repository.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/docs/
+!/data/
+!/scripts/
+
+# Never include downloaded executables, firmware archives, private keys or dumps.
+**/*.zip
+**/*.apk
+**/*.exe
+**/*.dll
+**/*.bin
+**/*.img
+**/*.log
+**/adbkey*
+**/.env*

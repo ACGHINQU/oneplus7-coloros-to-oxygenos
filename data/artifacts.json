@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "case_date": "2026-09-16",
+  "scope": "OnePlus 7 GM1900, ColorOS 12.1 / Android 12, GM1900_11_H.40",
+  "artifacts": [
+    {
+      "id": "oxygenos_rollback",
+      "file_name": "OnePlus7Oxygen_14.P.41_OTA_0410_all_2112101753_downgrade_da90e698650240ff.zip",
+      "size_bytes": 2579323479,
+      "sha256": "E15EE75F64CF6E19AE7696A0C933C5AA3B811850A0BC67407CB2D669DC74C19E",
+      "md5": "F557A41C802B09636740303A4618F869",
+      "source_listing": "https://oxygenupdater.com/article/352/",
+      "original_url": "https://oxygenos.oneplus.net/OnePlus7Oxygen_14.P.41_OTA_0410_all_2112101753_downgrade_da90e698650240ff.zip",
+      "download_url_used": "https://s3.amazonaws.com/oxygenos.oneplus.net/OnePlus7Oxygen_14.P.41_OTA_0410_all_2112101753_downgrade_da90e698650240ff.zip",
+      "target_device": "OnePlus7",
+      "target_android_version": "11",
+      "target_oxygenos_version_from_source_listing": "11.0.5.1",
+      "wipes_data": true,
+      "ota_certificate_sha256": "4681AD50CAFC580EDFE027BD3FE593254E72CD2DEF1B351FEA306CCF6220CF07"
+    },
+    {
+      "id": "local_updater_apk",
+      "file_name": "OPLocalUpdate_For_Android12.apk",
+      "local_name_used_in_original_session": "OPLocalUpdate-mirror.apk",
+      "size_bytes": 3424088,
+      "sha256": "57751A3B0F5F1727A3C46641294FDDF3E06588FD1C86BF47DEE9D7560A81001C",
+      "source_listing": "https://oxygenupdater.com/article/352/",
+      "original_url": "https://oxygenos.oneplus.net/OPLocalUpdate_For_Android12.apk",
+      "original_url_observation": "HTTP 403 during the case",
+      "download_url_used": "https://raw.githubusercontent.com/seanwlk/oneplus10t/main/OPLocalUpdate_For_Android12.apk",
+      "mirror_type": "community-preserved copy, signature checked against installed official updater",
+      "package_name": "com.oneplus.opbackup",
+      "version_observed": "1.0.0-S-DP",
+      "signing_certificate_sha256": "FC98DAE63AD39626C8C67FBE83F2F06F74932A9CD146B92CECFC6A047A904386",
+      "original_v1_verified_entries": 1196
+    }
+  ],
+  "tools": [
+    {
+      "name": "Google Android SDK Platform Tools",
+      "version_observed": "37.0.1-15733141",
+      "source": "https://developer.android.com/tools/releases/platform-tools",
+      "download_url_used": "https://dl.google.com/android/repository/platform-tools-latest-windows.zip",
+      "note": "The latest URL is mutable; no Platform Tools archive is redistributed."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "validation_date": "2026-09-16",
+  "purpose": "Repository preparation: rerun public scripts on the original downloaded files",
+  "file_identity": {
+    "SchemaVersion": 1,
+    "Results": [
+      {
+        "Artifact": "oxygenos_rollback",
+        "ExpectedFileName": "OnePlus7Oxygen_14.P.41_OTA_0410_all_2112101753_downgrade_da90e698650240ff.zip",
+        "SizeBytes": 2579323479,
+        "SHA256": "E15EE75F64CF6E19AE7696A0C933C5AA3B811850A0BC67407CB2D669DC74C19E",
+        "IdentityMatchesCaseArtifact": true,
+        "CheckScope": "Size and SHA256 only; this result is not a cryptographic signature verification."
+      },
+      {
+        "Artifact": "local_updater_apk",
+        "ExpectedFileName": "OPLocalUpdate_For_Android12.apk",
+        "SizeBytes": 3424088,
+        "SHA256": "57751A3B0F5F1727A3C46641294FDDF3E06588FD1C86BF47DEE9D7560A81001C",
+        "IdentityMatchesCaseArtifact": true,
+        "CheckScope": "Size and SHA256 only; this result is not a cryptographic signature verification."
+      }
+    ]
+  },
+  "ota_signature": {
+    "SchemaVersion": 1,
+    "SignatureVerified": true,
+    "SignerMatchesPinnedCaseCertificate": true,
+    "CertificateSHA256": "4681AD50CAFC580EDFE027BD3FE593254E72CD2DEF1B351FEA306CCF6220CF07",
+    "SignedLength": 2579321946,
+    "SignatureStart": 1513,
+    "CommentSize": 1531,
+    "DigestAlgorithm": "1.3.14.3.2.26",
+    "SignedAttributeCount": 0,
+    "Scope": "Android whole-file OTA signature for the pinned case certificate; not a device compatibility or unlock check."
+  },
+  "apk_signature_reexecuted_by_public_scripts": false
+}

@@ -1,0 +1,2 @@
+FAILED (remote: 'Device cannot be unlocked for technical reason.')
+fastboot: error: Command failed
