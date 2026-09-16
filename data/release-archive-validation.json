@@ -1,0 +1,29 @@
+{
+  "validation_date": "2026-09-16",
+  "firmware_reassembly": {
+    "FileName": "OnePlus7Oxygen_14.P.41_OTA_0410_all_2112101753_downgrade_da90e698650240ff.zip",
+    "SHA256": "E15EE75F64CF6E19AE7696A0C933C5AA3B811850A0BC67407CB2D669DC74C19E",
+    "SizeBytes": 2579323479,
+    "RestoredExactly": true,
+    "AlreadyPresent": false
+  },
+  "reassembled_ota_signature": {
+    "SchemaVersion": 1,
+    "SignatureVerified": true,
+    "SignerMatchesPinnedCaseCertificate": true,
+    "CertificateSHA256": "4681AD50CAFC580EDFE027BD3FE593254E72CD2DEF1B351FEA306CCF6220CF07",
+    "SignedLength": 2579321946,
+    "SignatureStart": 1513,
+    "CommentSize": 1531,
+    "DigestAlgorithm": "1.3.14.3.2.26",
+    "SignedAttributeCount": 0,
+    "Scope": "Android whole-file OTA signature for the pinned case certificate; not a device compatibility or unlock check."
+  },
+  "incorrect_part_checksum_rejected": true,
+  "release_asset_hashes_verified": 2,
+  "unchanged_tool_members_verified": 7,
+  "isolated_tool_version_checks": {
+    "adb": "37.0.1-15733141",
+    "fastboot": "37.0.1-15733141"
+  }
+}

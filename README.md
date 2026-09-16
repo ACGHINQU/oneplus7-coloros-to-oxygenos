@@ -42,10 +42,11 @@ flowchart TD
 2. [文件来源与验证](docs/verification.md)：官方资源、社区 APK 副本、签名与校验值。
 3. [证据及适用范围](docs/evidence.md)：哪些是原始输出、哪些是转录，哪些结论仍未验证。
 4. [脱敏数据](data/)：设备构建信息、Fastboot 输出、校验报告、OTA 元数据与公开签名证书。
+5. [安装文件归档与恢复](docs/archive.md)：从 GitHub Releases 下载固件分片、更新 APK 和 ADB/Fastboot 工具，并验证恢复后的原文件。
 
 ## 文件校验
 
-固件和 APK 不随仓库分发。获取地址、精确大小、哈希及签名证书指纹见 [资源清单](data/artifacts.json)。固件约 2.58 GB；ADB / Fastboot 使用 Google 官方 Platform Tools。
+**[下载实测安装文件归档](https://github.com/ACGHINQU/oneplus7-coloros-to-oxygenos/releases/tag/assets-2026-09-16)**。固件、更新 APK 和本次使用的 ADB/Fastboot 组件保存在 GitHub Releases；Git 历史保留文档、校验数据和脚本。固件约 2.58 GB，按原始字节分成两份，须合并成原 ZIP 后使用。详细步骤见 [归档说明](docs/archive.md)。原下载地址与签名证书指纹仍保存在 [资源清单](data/artifacts.json)，归档文件的大小和 SHA256 在 [归档清单](data/release-archive.json) 中。
 
 下载后使用 **PowerShell 7** 在电脑上验证文件；以下脚本只读取本地文件，不连接或操作手机：
 

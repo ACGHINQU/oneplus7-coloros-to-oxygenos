@@ -43,5 +43,6 @@
       "download_url_used": "https://dl.google.com/android/repository/platform-tools-latest-windows.zip",
       "note": "The latest URL is mutable; no Platform Tools archive is redistributed."
     }
-  ]
+  ],
+  "archive_release_url": "https://github.com/ACGHINQU/oneplus7-coloros-to-oxygenos/releases/tag/assets-2026-09-16"
 }

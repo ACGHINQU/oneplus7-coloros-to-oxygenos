@@ -1,6 +1,6 @@
 # 文件来源与验证
 
-精确 URL、文件大小和哈希保存在 [artifacts.json](../data/artifacts.json)。大型固件、APK、Google Platform Tools 及从设备提取的应用本体没有上传。
+原始 URL、文件大小和哈希保存在 [artifacts.json](../data/artifacts.json)。已验证的固件分片、更新 APK 及 ADB/Fastboot 组件另保存在 [GitHub Releases](https://github.com/ACGHINQU/oneplus7-coloros-to-oxygenos/releases/tag/assets-2026-09-16)，归档恢复方法见 [archive.md](archive.md)。从设备提取的应用本体、私人调试数据和完整 Google SDK 包没有公开上传。
 
 ## 固件
 
@@ -50,4 +50,5 @@ FC98DAE63AD39626C8C67FBE83F2F06F74932A9CD146B92CECFC6A047A904386
 - 固件使用精确文件名和 SHA256 固定本次文件，旧 URL 的可用性可能变化。
 - 社区 APK 链接指向仓库分支，内容也可能变化；以清单中的 SHA256 判定是否仍是本次验证的文件。
 - 下载到不同哈希的文件时不能继续把本案例的验证结论套在该文件上。
+- 为减少旧链接失效的影响，增加了独立 Release 归档。固件分片合并后的 SHA256 与原包完全相同，完整 OTA 签名再次验证通过；结果见 [release-archive-validation.json](../data/release-archive-validation.json)。
 - 资源列表：[Oxygen Updater](https://oxygenupdater.com/article/352/)。机制说明：[Android OTA 签名文档](https://source.android.com/docs/core/ota/sign_builds)。
